@@ -9,6 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.weekaheadapplication.tips.TipActivity
+import com.example.weekaheadapplication.yelp.YelpActivity
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         var textView = findViewById<TextView>(R.id.tv_hello)
 
         var button: Button = findViewById(R.id.buttonChange)
-        val intent = Intent(this, TipActivity::class.java)
+        val intent = Intent(this, YelpActivity::class.java)
 
         button.setOnClickListener(View.OnClickListener {
             //textView.text = "its changed"

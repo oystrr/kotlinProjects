@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WeekAheadApplication">
-        <activity android:name=".tips.TipActivity"></activity>
+        <activity android:name=".yelp.YelpActivity"></activity>
+        <activity android:name=".tips.TipActivity" />
         <activity android:name=".TrialActivity" />
         <activity android:name=".demoActivity" />
         <activity android:name=".MainActivity">
