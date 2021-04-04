@@ -8,5 +8,17 @@ data class YelpSearchResults(
 )
 
 data class YelpRestaurant(
-    @SerializedName("name") val name:String
+    @SerializedName("name") val name:String,
+    val location:YelpLocation,
+    val categories:List<YelpCategory>,
+    @SerializedName("image_url") val imageUrl: String,
+    @SerializedName("distance") val distanceInMeters: Double
+)
+
+data class YelpCategory(
+    val title: String
+)
+
+data class YelpLocation(
+    @SerializedName("address1") val address: String
 )
