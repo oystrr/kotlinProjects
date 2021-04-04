@@ -30,6 +30,7 @@ class YelpActivity : AppCompatActivity() {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
 
+        //checking for git connect
         val yelpService = retrofit.create(YelpService::class.java)
         yelpService.searchRestaurants("Bearer $API_KEY","Avocado", "New York")
                 .enqueue(object : Callback<YelpSearchResults> {
