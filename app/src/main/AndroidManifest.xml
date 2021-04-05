@@ -11,7 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WeekAheadApplication">
-        <activity android:name=".yelp.YelpActivity"></activity>
+        <activity android:name=".instafire.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".yelp.YelpActivity" />
         <activity android:name=".tips.TipActivity" />
         <activity android:name=".TrialActivity" />
         <activity android:name=".demoActivity" />
