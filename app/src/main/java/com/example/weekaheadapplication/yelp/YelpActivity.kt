@@ -40,6 +40,7 @@ class YelpActivity : AppCompatActivity() {
                             Log.w(TAG, "Did not receive valid response")
                             return
                         }
+                        //updating the data on recyclerview
                         restaurants.addAll(body.restaurants)
                         adapter.notifyDataSetChanged()
 
